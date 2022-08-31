@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Julius Sans One";
+  src: url("../assets/fonts/JuliusSansOne-Regular.ttf");
+}
+
+/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Julius Sans One',
+    sans-serif;
+  list-style: none;
+  font-weight: 900;
+  text-decoration: none;
+  color: #34353c;
+}
+
+h1 {
+  font-size: clamp(3rem, 2.5vw, 6rem);
+  color: #98594a;
+  user-select: none;
+}
+
+h2 {
+  font-size: clamp(2rem, 2.5vw, 1.8rem);
+  user-select: none;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+body {
+  background-image: linear-gradient(to top, #bdc2e8 0%, #bdc2e8 1%, #e6dee9 100%);
+}
+
+/* navbar - menu */
+
+.nav-radius {
+  border-radius: 0 0 1em 1em;
+}
+
+.link-mina:hover {
+  color: #d87093;
+}
+
+/* home */
+
+.animation {
+  transform:
+    perspective(750px) translate3d(0px, 0px, -250px) rotateX(27deg) scale(0.9, 0.9);
+  border-radius: 50%;
+  border: 5px solid #e6e6e6;
+  box-shadow: 0 70px 40px -20px rgba(0, 0, 0, 0.2);
+  transition: 0.4s ease-in-out transform;
+}
+
+.logo {
+  font-size: 1.2rem;
+  color: #98594a;
+}
+
+.img-home {
+  max-width: 20em;
+  max-height: 20em;
+  border-radius: 50%;
+  object-fit: cover;
+  aspect-ratio: 1/1;
+}
+
+.animation:hover {
+  transform: translate3d(0px, 0px, -250px);
+}
+
+.welcome-vid {
+  border-radius: 1em;
+  width: 100%;
+}
+
+/* about us */
+
+.welcome {
+  max-width: 80vw;
+  border-radius: 1em;
+}
+
+.circle {
+  transform: rotate(.054turn);
+  border-radius: 50%;
+}
+
+/* services */
+
+.card-services {
+  max-height: 1.2em;
+  border-radius: 1em 1em 0 0;
+}
+
+/* form */
+
+.form-bg {
+  background: #e6e6fa;
+}
+
+.btn-mina {
+  color: #f8f8ff;
+  background: #dda0dd;
+}
+
+/* footer */
+
+.footer {
+  background-color: lavender;
+  user-select: none;
+}
+
+.footer-logos {
+  max-width: 3em;
+  max-height: 3em;
+}
+
+.img-size {
+  height: 8em;
+  max-width: 15em;
+  object-fit: cover;
+}
